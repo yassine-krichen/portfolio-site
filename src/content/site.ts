@@ -1,9 +1,8 @@
 /**
  * Single source of truth for all site copy and data.
- * Edit social URLs + SITE_URL here before deploy — no code changes needed.
+ * Edit social URLs and SITE_URL here; no code changes needed.
  */
 
-// TODO(user): set to the real production domain once deployed to Vercel.
 export const SITE_URL = "https://yassinekrichen.vercel.app";
 
 export type Service = {
@@ -28,7 +27,7 @@ export type Project = {
   name: string;
   description: string;
   stack: string[];
-  /** Replace '#' with a real GitHub/demo URL, or leave for client work. */
+  /** GitHub repo or live demo URL. */
   href: string;
   client: boolean;
 };
@@ -43,7 +42,7 @@ export const site = {
   heroLine: "I build the products startups actually ship.",
   available: true,
 
-  // Contact — fill the two social URLs after the build (one-file edit).
+  // Contact
   email: "krichenyassine22@gmail.com",
   linkedin: "linkedin.com/in/krichenyassine",
   github: "github.com/yassine-krichen",
@@ -96,7 +95,7 @@ export const site = {
 
   projects: [
     {
-      name: "Resume AI",
+      name: "resumiq-job-match-resume-engine",
       description:
         "AI-powered resume builder that generates optimized resumes based on job descriptions, with real-time feedback and formatting.",
       stack: [
@@ -108,21 +107,21 @@ export const site = {
         "PostgreSQL",
         "Docker",
       ],
-      href: "#", // just for personal use, i doubt that i'm putting this on the open market, but if i do, I'll replace this with a real URL.
+      href: "https://github.com/yassine-krichen/resumiq-job-match-resume-engine",
       client: false,
     },
     {
-      name: "Pulse",
+      name: "pulse-linkedin-post-generator",
       description:
-        "LinkedIn profile reviver — feeds off data you input, generates worthy personalized content and orgainzes it for weekly schedule for maxiumum engagement.",
+        "LinkedIn profile reviver. It takes the data you provide, generates personalized content, and organizes it into a weekly schedule for maximum engagement.",
       stack: ["Next.js", "LLM", "vitest"],
-      href: "#", // same for this one, just for personal use, but if i do put it on the open market, I'll replace this with a real URL.
+      href: "https://github.com/yassine-krichen/pulse-linkedin-post-generator",
       client: false,
     },
     {
-      name: "Mechanic Pro",
+      name: "vehicle-inspection-app",
       description:
-        "Digital mechanic System for digitilizing the whole mechanic process from diagnosis to repair to invoices with many options and flexibility for the users. specifically designed for the US market.",
+        "Digital system for the whole mechanic workflow, from diagnosis to repair to invoices, with flexible options for users. Designed specifically for the US market.",
       stack: ["Next.js", "Supabase", "Prisma"],
       href: "https://vehicle-inspection-app.vercel.app/",
       client: true,
